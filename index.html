@@ -15,6 +15,7 @@
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             width: 90%;
+            max-width: 1000px;
             gap: 8px;
             margin: 20px auto;
         }
@@ -43,8 +44,7 @@
         <!-- Headers -->
         <div class="header">BEGINNER</div>
         <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20240319_LMU_GTE_Bahrain.webp" height=180></div>
-        <div class="cell">3:45pm<br> 5:15pm<br> 6:45pm<br> 8:15pm<br> 9:45pm<br>
-11:15pm<br></div>        
+        <div class="cell">6:45pm<br> 8:15pm<br> 9:45pm<br> 11:15pm<br></div>        
         <div class="cell">LMGTE Fixed</div>
         <div class="cell">Bahrain Wec 2023</div>
         <div class="cell">Duration<br>32 minutes</div>
@@ -52,8 +52,7 @@
 
         <div class="header">INTERMEDIATE</div>
         <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250114_LMU_PrototypeClassic_Interlagos.webp" height=180></div>
-        <div class="cell">3:45pm<br> 5:15pm<br> 6:45pm<br> 8:15pm<br> 9:45pm<br>
-11:15pm<br></div>
+        <div class="cell">6:45pm<br> 8:15pm<br> 9:45pm<br> 11:15pm<br></div>
         <div class="cell">Prototype Classic Trophy</div>
         <div class="cell">Interlagos 2024</div>
         <div class="cell">Duration<br>57 minutes</div>
@@ -61,7 +60,7 @@
 
         <div class="header">ADVANCED</div>
         <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250304_LMU_OneStintHyLMGT3_Portimao.webp" height=180></div>
-        <div class="cell">4:30pm<br> 6:00pm<br> 7:30pm<br> 9:00pm<br> 10:30pm<br></div>
+        <div class="cell">7:30pm<br> 9:00pm<br> 10:30pm<br></div>
         <div class="cell">One Stint Sprint</div>
         <div class="cell">Portimao Wec 2023</div>
         <div class="cell">Duration<br>57 minutes</div>
@@ -69,7 +68,7 @@
 
         <div class="header">BEGINNER</div>
         <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250304_LMU_LMGT3Fixed_MonzaNoChic.webp" height=180></div>
-        <div class="cell">4:30pm<br> 6:00pm<br> 7:30pm<br> 9:00pm<br> 10:30pm<br></div>
+        <div class="cell">7:30pm<br> 9:00pm<br> 10:30pm<br></div>
         <div class="cell">LMGT3 Fixed</div>
         <div class="cell">Monza 2023</div>
         <div class="cell">Duration<br>32 minutes</div>
@@ -77,7 +76,7 @@
 
         <div class="header">INTERMEDIATE</div>
         <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250304_LMU_WECXperienceHyLMGT3_SpaEndurance.webp" height=180></div>
-        <div class="cell">4:30pm<br> 6:00pm<br> 7:30pm<br> 9:00pm<br> 10:30pm<br></div>
+        <div class="cell">7:30pm<br> 9:00pm<br> 10:30pm<br></div>
         <div class="cell">WEC-Xperience Fixed</div>
         <div class="cell">Spa 2023</div>
         <div class="cell">Duration<br>57 minutes</div>
@@ -91,39 +90,38 @@
         <!-- Generating a 5x5 table -->
         <tr>
             <th>INTERMEDIATE</th>
-            <th>ADVANCED</th>
             <th>BEGINNER</th>
             <th>INTERMEDIATE</th>
             <th>BEGINNER</th>
+            <th>ADVANCED</th>
         </tr>
         <tr>
-            <td>Porsche Trophy</td>
-            <td>GT3 Open</td>
-            <td>BMW M2 Cup</td>
             <td>Prototype Challenge</td>
+            <td>BMW M2 Cup</td>
+            <td>Porsche Trophy</td>
             <td>Open Wheel Sprint</td>
+            <td>GT3 Open</td>
         </tr>
         <tr>
-            <td>Thruxton Circuit</td>
-            <td>Lime Rock Park</td>
-            <td>Manfeild Circuit Chris Amon</td>
             <td>Ibarra</td>
+            <td>Manfeild Circuit Chris Amon</td>
+            <td>Thruxton Circuit</td>
             <td>Mores</td>
+            <td>Lime Rock Park</td>
         </tr>
         <tr>
-            <td>Duration<br>50 minutes</td>
             <td>Duration<br>50 minutes</td>
             <td>Duration<br>36 minutes</td>
             <td>Duration<br>50 minutes</td>
             <td>Duration<br>36 minutes</td>
+            <td>Duration<br>50 minutes</td>
         </tr>
         <tr>
-            <td>3:30pm<br> 5:30pm<br> 7:30pm<br> 9:30pm<br> 11:30pm<br></td>
-            <td>4:00pm<br> 6:00pm<br> 8:00pm<br> 10:00pm<br></td>
-            <td>4:00pm<br> 5:30pm<br> 7:00pm<br> 8:30pm<br> 10:00pm<br>
-11:30pm<br></td>
-            <td>4:30pm<br> 6:30pm<br> 8:30pm<br> 10:30pm<br></td>
-            <td>4:45pm<br> 6:15pm<br> 7:45pm<br> 9:15pm<br> 10:45pm<br></td>
+            <td>6:30pm<br> 8:30pm<br> 10:30pm<br></td>
+            <td>7:00pm<br> 8:30pm<br> 10:00pm<br> 11:30pm<br></td>
+            <td>7:30pm<br> 9:30pm<br> 11:30pm<br></td>
+            <td>7:45pm<br> 9:15pm<br> 10:45pm<br></td>
+            <td>8:00pm<br> 10:00pm<br></td>
         </tr>
     </table>
   
