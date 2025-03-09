@@ -10,67 +10,66 @@
         body {
             font-family: 'Open Sans', sans-serif;
         }
-        table {
+        .table-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
             width: 90%;
-            border-collapse: collapse;
+            gap: 8px;
             margin: 20px auto;
         }
-        th, td {
-            border: 1px solid #ddd;
+        .header, .cell {
             padding: 8px;
             text-align: center;
         }
-        th {
+        .header {
             background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
 
-    <h1 style="text-align: center;">Racecontrol Events</h1>
-
-    <h2 style="text-align: center;">LMU</h1>
+  <h1 style="text-align: center;">Racecontrol Events</h1>
+  <h2 style="text-align: center;">LMU</h1>
     
-    <table>
-        <!-- Generating a 5x5 table -->
-        <tr>
-            <th>BEGINNER</th>
-            <th>INTERMEDIATE</th>
-            <th>ADVANCED</th>
-            <th>BEGINNER</th>
-            <th>INTERMEDIATE</th>
-        </tr>
-        <tr>
-            <td>LMGTE Fixed</td>
-            <td>Prototype Classic Trophy</td>
-            <td>One Stint Sprint</td>
-            <td>LMGT3 Fixed</td>
-            <td>WEC-Xperience Fixed</td>
-        </tr>
-        <tr>
-            <td>Bahrain Wec 2023</td>
-            <td>Interlagos 2024</td>
-            <td>Portimao Wec 2023</td>
-            <td>Monza 2023</td>
-            <td>Spa 2023</td>
-        </tr>
-        <tr>
-            <td>Duration<br>32 minutes</td>
-            <td>Duration<br>57 minutes</td>
-            <td>Duration<br>57 minutes</td>
-            <td>Duration<br>32 minutes</td>
-            <td>Duration<br>57 minutes</td>
-        </tr>
-        <tr>
-            <td>3:45pm<br> 5:15pm<br> 6:45pm<br> 8:15pm<br> 9:45pm<br>
-11:15pm<br></td>
-            <td>3:45pm<br> 5:15pm<br> 6:45pm<br> 8:15pm<br> 9:45pm<br>
-11:15pm<br></td>
-            <td>4:30pm<br> 6:00pm<br> 7:30pm<br> 9:00pm<br> 10:30pm<br></td>
-            <td>4:30pm<br> 6:00pm<br> 7:30pm<br> 9:00pm<br> 10:30pm<br></td>
-            <td>4:30pm<br> 6:00pm<br> 7:30pm<br> 9:00pm<br> 10:30pm<br></td>
-        </tr>
-    </table>
+  <div class="table-container">
+        <!-- Headers -->
+        <div class="header">beginner</div>
+        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20240319_LMU_GTE_Bahrain.webp"></div>
+        <div class="cell">LMGTE Fixed</div>
+        <div class="cell">Bahrain Wec 2023</div>
+        <div class="cell">Duration<br>32 minutes</div>
+        <div class="cell">3:45pm<br> 5:15pm<br> 6:45pm<br> 8:15pm<br> 9:45pm<br>
+11:15pm<br></td</div>
+
+        <div class="header">intermediate</div>
+        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20240319_LMU_GTE_Bahrain.webp"></div>
+        <div class="cell">Prototype Classic Trophy</div>
+        <div class="cell">Interlagos 2024</div>
+        <div class="cell">Duration<br>57 minutes</div>
+        <div class="cell">3:45pm<br> 5:15pm<br> 6:45pm<br> 8:15pm<br> 9:45pm<br>
+11:15pm<br></td</div>
+
+        <div class="header">advanced</div>
+        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20240319_LMU_GTE_Bahrain.webp"></div>
+        <div class="cell">One Stint Sprint</div>
+        <div class="cell">Portimao Wec 2023</div>
+        <div class="cell">Duration<br>57 minutes</div>
+        <div class="cell">4:30pm<br> 6:00pm<br> 7:30pm<br> 9:00pm<br> 10:30pm<br></td</div>
+
+        <div class="header">beginner</div>
+        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20240319_LMU_GTE_Bahrain.webp"></div>
+        <div class="cell">LMGT3 Fixed</div>
+        <div class="cell">Monza 2023</div>
+        <div class="cell">Duration<br>32 minutes</div>
+        <div class="cell">4:30pm<br> 6:00pm<br> 7:30pm<br> 9:00pm<br> 10:30pm<br></td</div>
+
+        <div class="header">beginner</div>
+        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20240319_LMU_GTE_Bahrain.webp"></div>
+        <div class="cell">WEC-Xperience Fixed</div>
+        <div class="cell">Spa 2023</div>
+        <div class="cell">Duration<br>57 minutes</div>
+        <div class="cell">4:30pm<br> 6:00pm<br> 7:30pm<br> 9:00pm<br> 10:30pm<br></td</div>
+    </div>
 
     <br>
     <h2 style="text-align: center;">rF2</h1>
