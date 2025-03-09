@@ -6,6 +6,7 @@
     <title>Racecontrol Events</title>
     <!-- Link to Google Fonts Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
@@ -68,7 +69,7 @@
         <div class="cell">Duration<br>32 minutes</div>
         <div class="cell">4:30pm<br> 6:00pm<br> 7:30pm<br> 9:00pm<br> 10:30pm<br></div>
 
-        <div class="header">BEGINNER</div>
+        <div class="header">INTERMEDIATE</div>
         <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250304_LMU_WECXperienceHyLMGT3_SpaEndurance.webp" height=180></div>
         <div class="cell">WEC-Xperience Fixed</div>
         <div class="cell">Spa 2023</div>
@@ -118,6 +119,30 @@
             <td>4:45pm<br> 6:15pm<br> 7:45pm<br> 9:15pm<br> 10:45pm<br></td>
         </tr>
     </table>
+  
+    <script>
+        $(function() {
+        //var text = $('.image-container>.status-tag').text().toLowerCase(), color;
+            $('.table-container>.header').each(function(){
+                console.log($(this).text());
+                var text = $(this).text().toLowerCase();
+                switch (text) {
+                case 'beginier':
+                    color = '#ff0000';
+                break;
+                case 'intermediate':
+                    color = '#6dc8bf';
+                break;
+                case 'advanced':
+                    color = '#ff2211'
+                break;
+                default:
+                    color = '#39d52d';
+                }
+                $(this).css('background', color);
+            });
+        });
+    </script>
   
 </body>
 </html>
