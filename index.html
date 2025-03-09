@@ -13,7 +13,7 @@
         }
         .table-container {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             width: 90%;
             max-width: 800px;
             gap: 8px;
@@ -32,14 +32,12 @@
             min-width: 77px;
         }
         .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
             background-color: #f2f2f2;
-            writing-mode: vertical-lr;
-            text-orientation: upright;
             font-weight: bold;
-            font-size: 10px;
-            width: 30px;
-            min-width: 30px;
-            max-width: 100px;
+            font-size: 16px;
+            width: 100%;
             align-content: center;
         }
         .track {
@@ -56,10 +54,11 @@
   <h1 style="text-align: center;">Racecontrol Events</h1>
   <h2 style="text-align: center;">LMU</h1>
     
-  <div class="table-container">
+      <div class="table-container">
         <!-- Headers -->
+        <div class="header">ADVANCED</div>    
         <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250304_LMU_OneStintHyLMGT3_Portimao.webp" height=180></div>
-        <div class="header">ADVANCED</div>
+        
         <div class="cell">7:30 pm<br> 9:00 pm<br> 10:30 pm<br></div>        
         <div class=".table-inner-container">    
           <div class="cell">One Stint Sprint</div>
@@ -68,8 +67,8 @@
         </div>
         
 
-        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250304_LMU_LMGT3Fixed_MonzaNoChic.webp" height=180></div>
         <div class="header">BEGINNER</div>
+        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250304_LMU_LMGT3Fixed_MonzaNoChic.webp" height=180></div>
         <div class="cell">7:30 pm<br> 9:00 pm<br> 10:30 pm<br></div>
         <div class=".table-inner-container">    
           <div class="cell">LMGT3 Fixed</div>
@@ -78,8 +77,8 @@
         </div>
         
 
-        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250304_LMU_WECXperienceHyLMGT3_SpaEndurance.webp" height=180></div>
         <div class="header">INTERMEDIATE</div>
+        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250304_LMU_WECXperienceHyLMGT3_SpaEndurance.webp" height=180></div>
         <div class="cell">7:30 pm<br> 9:00 pm<br> 10:30 pm<br></div>
         <div class=".table-inner-container">    
           <div class="cell">WEC-Xperience Fixed</div>
@@ -88,8 +87,8 @@
         </div>
         
 
-        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20240319_LMU_GTE_Bahrain.webp" height=180></div>
         <div class="header">BEGINNER</div>
+        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20240319_LMU_GTE_Bahrain.webp" height=180></div>
         <div class="cell">8:15 pm<br> 9:45 pm<br> 11:15 pm<br></div>
         <div class=".table-inner-container">    
           <div class="cell">LMGTE Fixed</div>
@@ -98,8 +97,8 @@
         </div>
         
 
-        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250114_LMU_PrototypeClassic_Interlagos.webp" height=180></div>
         <div class="header">INTERMEDIATE</div>
+        <div><img src="https://rf2-ui-images-prod.s3.eu-west-1.amazonaws.com/card/20250114_LMU_PrototypeClassic_Interlagos.webp" height=180></div>
         <div class="cell">8:15 pm<br> 9:45 pm<br> 11:15 pm<br></div>
         <div class=".table-inner-container">    
           <div class="cell">Prototype Classic Trophy</div>
